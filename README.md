@@ -1,64 +1,29 @@
-# p5.js multi sketch template
+# 0
+This project is a music visualization built with p5.js. It features dynamic water ripples and spectrum bars that react to the rhythm and frequency of the music.
 
-By putting different sketch.js and index.html files in directories we can more easily switch between multiple experiments.
+I've picked a track-rich music from BabyMetal's 《メギツネ - MEGITSUNE》
 
----
+# Features
+Water Ripple Effect
+Generates ripples at the center of the canvas that expand and fade over time.
+The ripple size is dynamically mapped based on low-frequency energy (20Hz to 200Hz) using fft.getEnergy(20, 200).
+Creates a visually rhythmic representation of the song's beats.
 
-This is a README file that can be used to describe and document your assignment.
+Spectrum Bars
+Displays 20 vertical bars representing the frequency spectrum of the audio.
+Bar colors range from blue to red, mapped by their position in the spectrum.
+Bar height changes dynamically according to the intensity of the frequency bands.
 
-Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)):
+Click anywhere on the canvas to play the music.
 
----
----
+# 1
+# Features
+Waveform Bar Chart
+The song’s waveform is analyzed using getPeaks(), dividing the audio into small segments.
+Each bar represents the energy of a segment, with its height and color dynamically mapped to the waveform's amplitude.
+Bars are displayed symmetrically on the canvas to provide a balanced visualization.
+Image FALL Overlay.
 
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
+A central image (fall.png) is displayed, scaled down for a subtle overlay effect.
+Inspired by the film 《Upside Down》 (2012),The choice of music is 《the Imperial March》
 
-**bold text**
-
-*italicized text*
-
-~~strikethrough text~~
-
-Ordered List:
-1. First item
-2. Second item
-3. Third item
-
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
-
-Link:  
-[linked text](https://www.example.com)
-
-
-Image with url:  
-![image description](https://dm-gy-6063-2024f-b.github.io/assets/homework/02/clark-espaco-modulado-00.jpg)
-
-
-Image on repo:  
-![image description](./file-name.jpg)
-
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
